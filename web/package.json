@@ -5,8 +5,8 @@
   "packageManager": "pnpm@10.2.1",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "node scripts/style-guard.mjs && tsc --noEmit && vite build",
+    "dev": "node init && vite",
+    "build": "node init && node scripts/style-guard.mjs && tsc --noEmit && vite build",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "preview": "vite preview",
